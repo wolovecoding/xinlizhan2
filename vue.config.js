@@ -1,6 +1,9 @@
 const path = require('path')
 
 module.exports={
+    publicPath: process.env.NODE_ENV === "production" ? "/" : "/",
+    outputDir: "dist", //打包目录
+    indexPath: "index.html",
     devServer:{
         proxy: {
             '/api': {    // search为转发路径

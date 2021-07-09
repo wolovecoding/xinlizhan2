@@ -72,7 +72,7 @@ const originalPush = VueRouter.prototype.push
 
 const router = new VueRouter({
   mode: 'history',
-  base: process.env.BASE_URL,
+  base: '/xlz/',
   routes
 })
 
